@@ -1,0 +1,403 @@
+/* Bouton */
+.btn {
+  display: inline-block;
+  padding: 4px 10px 4px;
+  margin-bottom: 0;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(top, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  border: 1px solid #ccc;
+  border-bottom-color: #bbb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  *margin-left: .3em;
+}
+.btn:hover,
+.btn:active,
+.btn[disabled] {
+  background-color: #e6e6e6;
+}
+.btn:active {
+  background-color: #cccccc;
+}
+.btn:first-child {
+  *margin-left: 0;
+}
+.btn:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+.btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn:active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #e6e6e6;
+  background-color: #d9d9d9 \9;
+  outline: 0;
+}
+
+.add {
+margin : 10px;
+}
+
+
+form {
+  margin: 0 0 18px;
+}
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 27px;
+  font-size: 19.5px;
+  line-height: 36px;
+  color: #333333;
+  border: 0;
+  border-bottom: 1px solid #eee;
+}
+legend small {
+  font-size: 13.5px;
+  color: #999999;
+}
+label,input,button,select,textarea,.cancel {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+}
+input,button,textarea,.cancel {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+label {
+  /*display: inline-block;*/
+  display: block;
+  margin-bottom: 5px;
+  color: #333333;
+}
+input,textarea,select,.cancel {
+  display: inline-block;
+  width: 210px;
+  height: 18px;
+  padding: 4px;
+  margin-bottom: 9px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #555555;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+label input, label textarea, label select {
+  display: block;
+}
+input[type="image"], input[type="checkbox"], input[type="radio"] {
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 3px 0;
+  *margin-top: 0;
+  /* IE7 */
+
+  line-height: normal;
+  cursor: pointer;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: 0 \9;
+  /* IE9 and down */
+
+}
+input[type="image"] {
+  border: 0;
+}
+input[type="file"] {
+  width: auto;
+  padding: initial;
+  line-height: initial;
+  border: initial;
+  background-color: #ffffff;
+  background-color: initial;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+input[type="button"], input[type="reset"], input[type="submit"], .cancel {
+  width: auto;
+  height: auto;
+  background:#f8b356;
+}
+
+input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .cancel:hover {
+	background:#ff0052;
+}
+select, input[type="file"] {
+  height: 28px;
+  /* In IE7, the height of the select element cannot be changed by height, only font-size */
+  *margin-top: 4px;
+  /* For IE7, add top margin to align select with labels */
+  line-height: 28px;
+}
+input[type="file"] {
+  line-height: 18px \9;
+}
+select {
+  width: 220px;
+  background-color: #ffffff;
+}
+select[multiple], select[size] {
+  height: auto;
+}
+input[type="image"] {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+textarea {
+  height: auto;
+}
+input[type="hidden"] {
+  display: none;
+}
+
+.radio, .checkbox {
+  padding-left: 18px;
+}
+.radio input[type="radio"], .checkbox input[type="checkbox"] {
+  float: left;
+  margin-left: -18px;
+}
+
+.formulaire {
+float:left;
+width: 40%;
+display:clear;
+padding: 0 0 0 80px;
+}
+.form-inline {
+  display: inline-block;
+  margin: 10px auto;
+}
+
+.form-inline .radio,
+.form-inline .checkbox {
+  margin-bottom: 0;
+  vertical-align: middle;
+  /*position: relative;
+  top: 5px;*/
+}
+
+input, textarea {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+input:focus, textarea:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+
+}
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus,
+select:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+:-moz-placeholder {
+  color: #999999;
+}
+::-webkit-input-placeholder {
+  color: #999999;
+}
+
+
+/**** STYLE CHEKBOX ****/
+/* Cachons la case à cocher */  
+[type="checkbox"]:not(:checked),  
+[type="checkbox"]:checked {  
+	position: absolute;  
+	left: -9999px;  
+}  
+
+/* on prépare le label */  
+[type="checkbox"]:not(:checked) + label,  
+[type="checkbox"]:checked + label {  
+	position: relative; /* permet de positionner les pseudo-éléments */  
+	padding-left: 25px; /* fait un peu d'espace pour notre case à venir */  
+	cursor: pointer;    /* affiche un curseur adapté */  
+}  
+/* Aspect des checkboxes */  
+/* :before sert à créer la case à cocher */  
+[type="checkbox"]:not(:checked) + label:before, 
+[type="checkbox"]:checked + label:before {  
+	content: '';  
+	position: absolute;  
+	left:0; top: 2px;  
+	width: 17px; height: 17px; /* dim. de la case */  
+	border: 1px solid #aaa;  
+	background: #f8f8f8;  
+	border-radius: 3px; /* angles arrondis */  
+	box-shadow: inset 0 1px 3px rgba(0,0,0,.3) /* légère ombre interne */  
+}  
+       
+/* Aspect général de la coche */  
+[type="checkbox"]:not(:checked) + label:after,  
+[type="checkbox"]:checked + label:after {  
+	content: '✔';  
+	position: absolute;  
+	top: 0; left: 4px;  
+	font-size: 14px;  
+	color: #09ad7e;  
+	transition: all .2s; /* on prévoit une animation */  
+}  
+/* Aspect si "pas cochée" */  
+[type="checkbox"]:not(:checked) + label:after {  
+opacity: 0; /* coche invisible */  
+transform: scale(0); /* mise à l'échelle à 0 */  
+}  
+/* Aspect si "cochée" */  
+[type="checkbox"]:checked + label:after {  
+	opacity: 1; /* coche opaque */  
+	transform: scale(1); /* mise à l'échelle 1:1 */  
+}  
+/* aspect désactivée */  
+[type="checkbox"]:disabled:not(:checked) + label:before,  
+[type="checkbox"]:disabled:checked + label:before {  
+	box-shadow: none;  
+	border-color: #bbb;  
+	background-color: #ddd;  
+}  
+/* styles de la coche (si cochée/désactivée) */  
+[type="checkbox"]:disabled:checked + label:after {  
+	color: #999;
+}  
+/* on style aussi le label quand désactivé */  
+[type="checkbox"]:disabled + label {  
+	color: #aaa;  
+}  
+       
+/* aspect au focus de l'élément */  
+[type="checkbox"]:checked:focus + label:before,  
+[type="checkbox"]:not(:checked):focus + label:before {  
+	border: 1px dotted blue;  
+}
+
+
+
+/**** ALERTE ****/
+.alert {
+  margin : 0 auto 4px auto;
+  width:90%;
+  padding: 8px 35px 8px 14px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+.alert {
+  color: #c09853;
+}
+.alert .close {
+  position: relative;
+  top: -2px;
+  /*right: -97%;*/
+  line-height: 18px;
+}
+
+.close {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #000000;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+.close:hover {
+  color: #000000;
+  text-decoration: none;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  cursor: pointer;
+}
+
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.alert-success {
+  color: #468847;
+}
+.alert-danger, .alert-error {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+}
+.alert-danger, .alert-error {
+  color: #b94a48;
+}
+.alert-info {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.alert-info {
+  color: #3a87ad;
+}
+.alert-block {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}

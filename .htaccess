@@ -1,0 +1,30 @@
+# Protege le .htaccess
+<Files ".ht*">
+Order allow,deny
+Deny from all
+Satisfy all
+</Files>
+
+# Indique l'en-tête Content-Type sur tout type de fichier
+AddDefaultCharset UTF-8
+
+#Bloquer le listing de répertoire
+Options -Indexes
+
+# Active la gestion des URL symboliques
+Options +FollowSymlinks
+
+# Active le module de réécriture
+RewriteEngine on
+
+# Régles de réécriture
+RewriteRule ^index\.html$ index.php [QSA,L,NC]
+
+# Page
+RewriteRule ^page-([a-z0-9\-]+)\.html$ index.php?page=$1 [QSA,L,NC]
+
+# Module
+RewriteRule ^([a-z\-]+)-([0-9]+)-([a-z\-]+)\.html$ index.php?mod=$1&id=$2&action=$3 [QSA,L,NC]
+RewriteRule ^([a-z\-]+)\.html$ index.php?mod=$1 [QSA,L,NC]
+
+
